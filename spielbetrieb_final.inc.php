@@ -13,15 +13,10 @@ require_once 'src\PHPExcel\Classes\PHPExcel\IOFactory.php';
 
 //definition
 $file = 'src\spielbetrieb.xls';
-$startfield = 78;
-$endfield = 84;
-$colRang = 'AE';
-$colTeam = 'AG';
-$colPunkte = 'AS';
-$colTore = 'AV';
-$colGegenTore = 'AY';
-$colDiff = 'BA';
-$excludedCell = '//';
+$cells[0]= [ '1. Halbfinale',          'J91','O91',   'AF91',  'AW91',  'AZ91'];
+$cells[1]= [ '2. Halbfinale',          'J95','O95',   'AF95',  'AW95',  'AZ95'];
+$cells[2]= [ 'Spiel um Platz 3 und 4', 'J99','O99',   'AF95',  'AW99',  'AZ99'];
+$cells[3]= [ 'Endspiel',               'J103','O103', 'AF103', 'AW103', 'AZ103'];
 
 if (!file_exists($file)) {
   exit("$file exisitiert nicht." . EOL);
