@@ -1,5 +1,5 @@
 <?php
-require_once 'spielbetrieb.inc.php';
+require 'spielbetrieb.inc.php';
 
 //active	  
 if (!empty($activeCol)){
@@ -10,6 +10,6 @@ if (!empty($activeCol)){
   $guestTeam = $objPHPExcel->getActiveSheet()->getCell($colTeamGuest.$activeCol)->getCalculatedValue();
   $homeGoal = $objPHPExcel->getActiveSheet()->getCell($colGoalHomeTeam.$activeCol)->getCalculatedValue();
   $guestGoal = $objPHPExcel->getActiveSheet()->getCell($colGoalGuestTeam.$activeCol)->getCalculatedValue();
-  print $group." ".$time." ".$homeTeam." : ".$guestTeam." ".$homeGoal." : ".$guestGoal . EOL; 
+  //print $group." ".$time." ".$homeTeam." : ".$guestTeam." ".$homeGoal." : ".$guestGoal . EOL; 
 }
 ?>
