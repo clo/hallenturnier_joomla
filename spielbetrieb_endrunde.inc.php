@@ -13,8 +13,8 @@ require_once 'src\PHPExcel\Classes\PHPExcel\IOFactory.php';
 require 'src\source.inc.php';
 
 //definition
-$startfield = 30;
-$endfield = 52;
+$startfield = 86;
+$endfield = 109;
 $colTime = 'J';
 $colGroup = 'G';
 $colTeamHome = 'O';
@@ -29,15 +29,12 @@ $widthGuestTeam='300px';
 $widthHomeGoal='50px';
 $widthGuestGoal='50px';
 $messageNoMatch='Kein Match';
-$excludedCell = '/J55|J56|J57|J58/';
+$excludedCell = '/J85/';
 
 $now = date('H:i');
 $nowInMin = (date('H') * 60) + date('i');
 $nextInMin = $nowInMin + $matchLengthInMin;
 $previousInMin = $nowInMin - $matchLengthInMin; 
-if (!file_exists($file)) {
-  exit("$file exisitiert nicht." . EOL);
-}
 
 //read excel
 $objPHPExcel = PHPExcel_IOFactory::load($file);

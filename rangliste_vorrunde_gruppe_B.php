@@ -10,11 +10,11 @@ if (!defined('EOL')){
 /** Include PHPExcel_IOFactory */
 //require_once dirname(__FILE__) . 'PHPExcel\Classes\PHPExcel\IOFactory.php';
 require_once 'src\PHPExcel\Classes\PHPExcel\IOFactory.php';
+require 'src\source.inc.php';
 
 //definition
-$file = 'src\spielbetrieb.xls';
-$startfield = 78;
-$endfield = 84;
+$startfield = 58;
+$endfield = 61;
 $colRang = 'AE';
 $colTeam = 'AG';
 $colPunkte = 'AS';

@@ -13,14 +13,15 @@ require_once 'src\PHPExcel\Classes\PHPExcel\IOFactory.php';
 require 'src\source.inc.php';
 
 //definition
-$startfield = 58;
-$endfield = 61;
-$colRang = 'B';
-$colTeam = 'D';
-$colPunkte = 'P';
-$colTore = 'S';
-$colGegenTore = 'V';
-$colDiff = 'X';
+$startfield = 78;
+$endfield = 81;
+$colRang = 'F';
+$colTeam = 'H';
+$colGroup = 'B';
+//$colPunkte = 'P';
+//$colTore = 'S';
+//$colGegenTore = 'V';
+//$colDiff = 'X';
 $excludedCell = '//';
 
 if (!file_exists($file)) {

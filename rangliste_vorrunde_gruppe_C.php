@@ -13,8 +13,8 @@ require_once 'src\PHPExcel\Classes\PHPExcel\IOFactory.php';
 require 'src\source.inc.php';
 
 //definition
-$startfield = 58;
-$endfield = 61;
+$startfield = 64;
+$endfield = 67;
 $colRang = 'B';
 $colTeam = 'D';
 $colPunkte = 'P';

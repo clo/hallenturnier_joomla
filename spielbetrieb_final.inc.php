@@ -10,17 +10,14 @@ if (!defined('EOL')){
 /** Include PHPExcel_IOFactory */
 //require_once dirname(__FILE__) . 'PHPExcel\Classes\PHPExcel\IOFactory.php';
 require_once 'src\PHPExcel\Classes\PHPExcel\IOFactory.php';
+require 'src\source.inc.php';
 
 //definition
-$file = 'src\spielbetrieb.xls';
-$cells[0]= [ '1. Halbfinale',          'J91','O91',   'AF91',  'AW91',  'AZ91'];
-$cells[1]= [ '2. Halbfinale',          'J95','O95',   'AF95',  'AW95',  'AZ95'];
-$cells[2]= [ 'Spiel um Platz 3 und 4', 'J99','O99',   'AF95',  'AW99',  'AZ99'];
-$cells[3]= [ 'Endspiel',               'J103','O103', 'AF103', 'AW103', 'AZ103'];
+//$cells[0]= [ '1. Halbfinale',          'J91','O91',   'AF91',  'AW91',  'AZ91'];
+//$cells[1]= [ '2. Halbfinale',          'J95','O95',   'AF95',  'AW95',  'AZ95'];
+//$cells[2]= [ 'Spiel um Platz 3 und 4', 'J99','O99',   'AF99',  'AW99',  'AZ99'];
+$cells[3]= [ 'Finale',               'J129','O129', 'AF129', 'AW129', 'AZ129'];
 
-if (!file_exists($file)) {
-  exit("$file exisitiert nicht." . EOL);
-}
 //read excel
 $objPHPExcel = PHPExcel_IOFactory::load($file);
 ?>
