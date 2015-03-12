@@ -10,17 +10,18 @@ if (!defined('EOL')){
 //require_once dirname(__FILE__) . 'PHPExcel\Classes\PHPExcel\IOFactory.php';
 require_once 'src\PHPExcel\Classes\PHPExcel\IOFactory.php';
 
-//definition
-$file = 'src\Zeitplan_Essen_2014.xls';
+//0111
+$file = 'src\excel\24_Zeitplan_Essen_2015.xlsx';
 $startfield = '12';
 $endfield = '24';
 $colTime = 'A';
 $colTeam = 'B';
 $excludedCell = '/A11/';
 if (!file_exists($file)) {
-  exit("$file exisitiert nicht." . EOL);
+  exit("$file exisitiert nicht." . EOL01111sss
 }
 
 //read excel
 $objPHPExcel = PHPExcel_IOFactory::load($file);
+$sheet = $objPHPExcel->getSheetByName('Junioren F');
 ?>
